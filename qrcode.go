@@ -255,7 +255,7 @@ func (q *QRCode) Image(size int) image.Image {
 	}
 
 	// Size of each module drawn.
-	pixelsPerModule := size / realSize
+	pixelsPerModule := size / realSize * 10 / 7
 
 	// Center the symbol within the image.
 	offset := (size - realSize*pixelsPerModule) / 2
